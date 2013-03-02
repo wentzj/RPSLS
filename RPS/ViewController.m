@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#define BUTTONWIDTH 240
+#define BUTTONHEIGHT 240
 
 @implementation ViewController
+@synthesize buttonScroller;
+@synthesize pageControl;
+@synthesize pageControlUsed;
 
 - (void)didReceiveMemoryWarning
 {
@@ -22,10 +27,47 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self.buttonScroller setContentSize:CGSizeMake(5*BUTTONWIDTH, BUTTONHEIGHT)];
+    for (int i = 0; i<5; i++) 
+    {
+        UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+        [button setBackgroundImage: [UIImage imageNamed:@"rock"] forState:UIControlStateNormal];
+        [button setFrame:CGRectMake(BUTTONWIDTH*i, 0, BUTTONWIDTH, BUTTONHEIGHT)];
+        [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        button.tag=i;
+    //Add to scrollview
+        [self.buttonScroller addSubview:button]; 
+    }
+    self.buttonScroller.pagingEnabled = YES;
+}
+
+- (IBAction)changePage:(id)sender {
+    self.pageControlUsed = YES;
+    CGFloat pageWidth = self.buttonScroller.contentSize.width /self.pageControl.numberOfPages;
+    CGFloat x = self.pageControl.currentPage * pageWidth;
+    [self.buttonScroller scrollRectToVisible:CGRectMake(x, 0, pageWidth, self.buttonScroller.contentSize.height) animated:YES];
+}
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    self.pageControlUsed = NO;
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    if (!self.pageControlUsed)
+    {    self.pageControl.currentPage = lround(self.buttonScroller.contentOffset.x /
+                                          (self.buttonScroller.contentSize.width / self.pageControl.numberOfPages));
+    }
+}
+
+- (void)buttonPressed:(UIButton*)sender
+{
+    NSLog(@"tag%d", sender.tag);
 }
 
 - (void)viewDidUnload
 {
+    [self setButtonScroller:nil];
+    [self setPageControl:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

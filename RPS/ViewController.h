@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIScrollViewDelegate>
+@property (weak, nonatomic) IBOutlet UIScrollView *buttonScroller;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+- (IBAction)changePage:(id)sender;
+@property BOOL pageControlUsed;
+
 
 @end

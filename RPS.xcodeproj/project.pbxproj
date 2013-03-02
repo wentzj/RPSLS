@@ -21,6 +21,12 @@
 		A8AAE6E716DDA52600DF346F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8AAE6C516DDA52500DF346F /* Foundation.framework */; };
 		A8AAE6EF16DDA52600DF346F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8AAE6ED16DDA52600DF346F /* InfoPlist.strings */; };
 		A8AAE6F216DDA52600DF346F /* RPSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AAE6F116DDA52600DF346F /* RPSTests.m */; };
+		A8AAE6FC16DDA5DF00DF346F /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = A8AAE6FB16DDA5DF00DF346F /* rock.png */; };
+		A8AAE6FE16DDA73E00DF346F /* tan-index-card-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = A8AAE6FD16DDA73E00DF346F /* tan-index-card-hi.png */; };
+		A8AAE70016DDA7F900DF346F /* scissors-open1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8AAE6FF16DDA7F900DF346F /* scissors-open1.jpg */; };
+		A8AAE70216DDA8AD00DF346F /* cartoon-lizard-10.gif in Resources */ = {isa = PBXBuildFile; fileRef = A8AAE70116DDA8AD00DF346F /* cartoon-lizard-10.gif */; };
+		A8AAE70416DDA90E00DF346F /* spock-vulcan-salute-.JPG in Resources */ = {isa = PBXBuildFile; fileRef = A8AAE70316DDA90E00DF346F /* spock-vulcan-salute-.JPG */; };
+		A8FE12F516E19EC000968B37 /* border.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8FE12F416E19EC000968B37 /* border.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +44,28 @@
 		A8AAE6C316DDA52500DF346F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A8AAE6C516DDA52500DF346F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A8AAE6C716DDA52500DF346F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A8AAE6CB16DDA52500DF346F /* RPS-Info.plist */ = {isa = PBXFileReference; path = "RPS-Info.plist"; sourceTree = "<group>"; };
+		A8AAE6CB16DDA52500DF346F /* RPS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RPS-Info.plist"; sourceTree = "<group>"; };
 		A8AAE6CD16DDA52500DF346F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A8AAE6CF16DDA52500DF346F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A8AAE6D116DDA52500DF346F /* RPS-Prefix.pch */ = {isa = PBXFileReference; path = "RPS-Prefix.pch"; sourceTree = "<group>"; };
-		A8AAE6D216DDA52500DF346F /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		A8AAE6D116DDA52500DF346F /* RPS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RPS-Prefix.pch"; sourceTree = "<group>"; };
+		A8AAE6D216DDA52500DF346F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A8AAE6D316DDA52500DF346F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A8AAE6D616DDA52500DF346F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		A8AAE6D916DDA52500DF346F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		A8AAE6DB16DDA52500DF346F /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		A8AAE6DB16DDA52500DF346F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A8AAE6DC16DDA52500DF346F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A8AAE6E316DDA52600DF346F /* RPSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AAE6E416DDA52600DF346F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		A8AAE6EC16DDA52600DF346F /* RPSTests-Info.plist */ = {isa = PBXFileReference; path = "RPSTests-Info.plist"; sourceTree = "<group>"; };
+		A8AAE6EC16DDA52600DF346F /* RPSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RPSTests-Info.plist"; sourceTree = "<group>"; };
 		A8AAE6EE16DDA52600DF346F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A8AAE6F016DDA52600DF346F /* RPSTests.h */ = {isa = PBXFileReference; path = RPSTests.h; sourceTree = "<group>"; };
+		A8AAE6F016DDA52600DF346F /* RPSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSTests.h; sourceTree = "<group>"; };
 		A8AAE6F116DDA52600DF346F /* RPSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPSTests.m; sourceTree = "<group>"; };
+		A8AAE6FB16DDA5DF00DF346F /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rock.png; path = ../../rock.png; sourceTree = "<group>"; };
+		A8AAE6FD16DDA73E00DF346F /* tan-index-card-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tan-index-card-hi.png"; path = "../../../Downloads/tan-index-card-hi.png"; sourceTree = "<group>"; };
+		A8AAE6FF16DDA7F900DF346F /* scissors-open1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "scissors-open1.jpg"; path = "../../../Downloads/scissors-open1.jpg"; sourceTree = "<group>"; };
+		A8AAE70116DDA8AD00DF346F /* cartoon-lizard-10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "cartoon-lizard-10.gif"; path = "../../../Downloads/cartoon-lizard-10.gif"; sourceTree = "<group>"; };
+		A8AAE70316DDA90E00DF346F /* spock-vulcan-salute-.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "spock-vulcan-salute-.JPG"; path = "../../../Downloads/spock-vulcan-salute-.JPG"; sourceTree = "<group>"; };
+		A8FE12F416E19EC000968B37 /* border.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = border.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +95,7 @@
 		A8AAE6B416DDA52500DF346F = {
 			isa = PBXGroup;
 			children = (
-				A8AAE6C916DDA52500DF346F /* RPS */,
+				A8AAE6C916DDA52500DF346F /* RPSLS */,
 				A8AAE6EA16DDA52600DF346F /* RPSTests */,
 				A8AAE6C216DDA52500DF346F /* Frameworks */,
 				A8AAE6C016DDA52500DF346F /* Products */,
@@ -110,17 +122,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A8AAE6C916DDA52500DF346F /* RPS */ = {
+		A8AAE6C916DDA52500DF346F /* RPSLS */ = {
 			isa = PBXGroup;
 			children = (
 				A8AAE6D216DDA52500DF346F /* AppDelegate.h */,
 				A8AAE6D316DDA52500DF346F /* AppDelegate.m */,
+				A8AAE6FD16DDA73E00DF346F /* tan-index-card-hi.png */,
+				A8AAE6FF16DDA7F900DF346F /* scissors-open1.jpg */,
+				A8FE12F416E19EC000968B37 /* border.jpg */,
 				A8AAE6D516DDA52500DF346F /* MainStoryboard_iPhone.storyboard */,
+				A8AAE70316DDA90E00DF346F /* spock-vulcan-salute-.JPG */,
 				A8AAE6D816DDA52500DF346F /* MainStoryboard_iPad.storyboard */,
 				A8AAE6DB16DDA52500DF346F /* ViewController.h */,
+				A8AAE6FB16DDA5DF00DF346F /* rock.png */,
+				A8AAE70116DDA8AD00DF346F /* cartoon-lizard-10.gif */,
 				A8AAE6DC16DDA52500DF346F /* ViewController.m */,
 				A8AAE6CA16DDA52500DF346F /* Supporting Files */,
 			);
+			name = RPSLS;
 			path = RPS;
 			sourceTree = "<group>";
 		};
@@ -227,6 +246,12 @@
 				A8AAE6CE16DDA52500DF346F /* InfoPlist.strings in Resources */,
 				A8AAE6D716DDA52500DF346F /* MainStoryboard_iPhone.storyboard in Resources */,
 				A8AAE6DA16DDA52500DF346F /* MainStoryboard_iPad.storyboard in Resources */,
+				A8AAE6FC16DDA5DF00DF346F /* rock.png in Resources */,
+				A8AAE6FE16DDA73E00DF346F /* tan-index-card-hi.png in Resources */,
+				A8AAE70016DDA7F900DF346F /* scissors-open1.jpg in Resources */,
+				A8AAE70216DDA8AD00DF346F /* cartoon-lizard-10.gif in Resources */,
+				A8AAE70416DDA90E00DF346F /* spock-vulcan-salute-.JPG in Resources */,
+				A8FE12F516E19EC000968B37 /* border.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +468,7 @@
 				A8AAE6F716DDA52600DF346F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8AAE6F816DDA52600DF346F /* Build configuration list for PBXNativeTarget "RPSTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +477,7 @@
 				A8AAE6FA16DDA52600DF346F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
