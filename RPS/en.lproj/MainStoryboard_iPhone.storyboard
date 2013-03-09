@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="PtJ-Pg-RNh">
     <dependencies>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
@@ -17,7 +17,7 @@
                                 <rect key="frame" x="19" y="20" width="283" height="269"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="pj5-Qz-2ze">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="pj5-Qz-2ze">
                                 <rect key="frame" x="40" y="35" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
@@ -35,11 +35,83 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.62268655753152924" blue="0.41765548567551825" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0zW-0r-82F"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="buttonScroller" destination="pj5-Qz-2ze" id="0n4-6c-00O"/>
                         <outlet property="pageControl" destination="tND-c2-fHf" id="pxI-0G-Mi9"/>
+                        <segue destination="oTA-nb-Pnf" kind="push" identifier="moveSelected" id="HYE-3m-jMQ"/>
                     </connections>
                 </viewController>
+            </objects>
+            <point key="canvasLocation" x="918" y="143"/>
+        </scene>
+        <scene sceneID="bmT-SD-2As">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVO-rb-Aqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="oTA-nb-Pnf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F8U-xd-8ja">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cfG-R4-kKD">
+                                <rect key="frame" x="79" y="403" width="163" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="START NEW GAME">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2" kind="push" id="BEA-vQ-HN8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="USER CHOSE: " lineBreakMode="tailTruncation" minimumFontSize="10" id="w0U-0M-eff">
+                                <rect key="frame" x="20" y="20" width="122" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PHONE CHOSE: " lineBreakMode="tailTruncation" minimumFontSize="10" id="POZ-xf-eTW">
+                                <rect key="frame" x="20" y="114" width="136" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WINNER: " lineBreakMode="tailTruncation" minimumFontSize="30" id="xBy-60-2SV">
+                                <rect key="frame" x="20" y="201" width="177" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BuX-8G-prc"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1351" y="140"/>
+        </scene>
+        <scene sceneID="NlO-xA-RKU">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4g-ms-AsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="PtJ-Pg-RNh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Cbo-0b-xSM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="KtK-Nv-zpF"/>
+                    </connections>
+                </navigationController>
             </objects>
             <point key="canvasLocation" x="392" y="143"/>
         </scene>

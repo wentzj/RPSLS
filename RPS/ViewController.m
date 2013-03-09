@@ -31,7 +31,29 @@
     for (int i = 0; i<5; i++) 
     {
         UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [button setBackgroundImage: [UIImage imageNamed:@"rock"] forState:UIControlStateNormal];
+        NSString* imageName;
+        switch (i) {
+            case 0:
+                imageName = @"rock.png";
+                break;
+            case 1:
+                imageName = @"tan-index-card-hi.png";
+                break;
+            case 2:
+                imageName = @"scissors-open1.jpg";
+                break;
+            case 3:
+                imageName = @"cartoon-lizard-10.gif";
+                break;
+            case 4:
+                imageName = @"spock-vulcan-salute-.JPG";
+                break;
+            
+            
+            default:
+                break;
+        }
+        [button setBackgroundImage: [UIImage imageNamed:imageName] forState:UIControlStateNormal];
         [button setFrame:CGRectMake(BUTTONWIDTH*i, 0, BUTTONWIDTH, BUTTONHEIGHT)];
         [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
         button.tag=i;
@@ -39,6 +61,7 @@
         [self.buttonScroller addSubview:button]; 
     }
     self.buttonScroller.pagingEnabled = YES;
+    [self.navigationController setNavigationBarHidden:1];
 }
 
 - (IBAction)changePage:(id)sender {
@@ -62,6 +85,7 @@
 - (void)buttonPressed:(UIButton*)sender
 {
     NSLog(@"tag%d", sender.tag);
+    [self performSegueWithIdentifier:@"moveSelected" sender:self];
 }
 
 - (void)viewDidUnload
