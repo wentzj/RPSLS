@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A895B56D16F01281006348E1 /* sborder.png in Resources */ = {isa = PBXBuildFile; fileRef = A895B56C16F01281006348E1 /* sborder.png */; };
+		A895B56F16F013C3006348E1 /* Gecko.png in Resources */ = {isa = PBXBuildFile; fileRef = A895B56E16F013C3006348E1 /* Gecko.png */; };
+		A895B57116F014DE006348E1 /* scissors.png in Resources */ = {isa = PBXBuildFile; fileRef = A895B57016F014DE006348E1 /* scissors.png */; };
+		A895B57716F015D9006348E1 /* paper1.png in Resources */ = {isa = PBXBuildFile; fileRef = A895B57616F015D9006348E1 /* paper1.png */; };
+		A895B57916F01623006348E1 /* spock1.png in Resources */ = {isa = PBXBuildFile; fileRef = A895B57816F01623006348E1 /* spock1.png */; };
 		A8AAE6C416DDA52500DF346F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8AAE6C316DDA52500DF346F /* UIKit.framework */; };
 		A8AAE6C616DDA52500DF346F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8AAE6C516DDA52500DF346F /* Foundation.framework */; };
 		A8AAE6C816DDA52500DF346F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8AAE6C716DDA52500DF346F /* CoreGraphics.framework */; };
@@ -22,11 +27,6 @@
 		A8AAE6EF16DDA52600DF346F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8AAE6ED16DDA52600DF346F /* InfoPlist.strings */; };
 		A8AAE6F216DDA52600DF346F /* RPSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AAE6F116DDA52600DF346F /* RPSTests.m */; };
 		A8AAE6FC16DDA5DF00DF346F /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = A8AAE6FB16DDA5DF00DF346F /* rock.png */; };
-		A8AAE6FE16DDA73E00DF346F /* tan-index-card-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = A8AAE6FD16DDA73E00DF346F /* tan-index-card-hi.png */; };
-		A8AAE70016DDA7F900DF346F /* scissors-open1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8AAE6FF16DDA7F900DF346F /* scissors-open1.jpg */; };
-		A8AAE70216DDA8AD00DF346F /* cartoon-lizard-10.gif in Resources */ = {isa = PBXBuildFile; fileRef = A8AAE70116DDA8AD00DF346F /* cartoon-lizard-10.gif */; };
-		A8AAE70416DDA90E00DF346F /* spock-vulcan-salute-.JPG in Resources */ = {isa = PBXBuildFile; fileRef = A8AAE70316DDA90E00DF346F /* spock-vulcan-salute-.JPG */; };
-		A8FE12F516E19EC000968B37 /* border.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8FE12F416E19EC000968B37 /* border.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A895B56C16F01281006348E1 /* sborder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sborder.png; path = ../../sborder.png; sourceTree = "<group>"; };
+		A895B56E16F013C3006348E1 /* Gecko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Gecko.png; path = ../../Gecko.png; sourceTree = "<group>"; };
+		A895B57016F014DE006348E1 /* scissors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scissors.png; path = ../../scissors.png; sourceTree = "<group>"; };
+		A895B57616F015D9006348E1 /* paper1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paper1.png; path = ../../paper1.png; sourceTree = "<group>"; };
+		A895B57816F01623006348E1 /* spock1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spock1.png; path = ../../spock1.png; sourceTree = "<group>"; };
 		A8AAE6BF16DDA52500DF346F /* RPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AAE6C316DDA52500DF346F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A8AAE6C516DDA52500DF346F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,11 +66,6 @@
 		A8AAE6F016DDA52600DF346F /* RPSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSTests.h; sourceTree = "<group>"; };
 		A8AAE6F116DDA52600DF346F /* RPSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPSTests.m; sourceTree = "<group>"; };
 		A8AAE6FB16DDA5DF00DF346F /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rock.png; path = ../../rock.png; sourceTree = "<group>"; };
-		A8AAE6FD16DDA73E00DF346F /* tan-index-card-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tan-index-card-hi.png"; path = "../../../Downloads/tan-index-card-hi.png"; sourceTree = "<group>"; };
-		A8AAE6FF16DDA7F900DF346F /* scissors-open1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "scissors-open1.jpg"; path = "../../../Downloads/scissors-open1.jpg"; sourceTree = "<group>"; };
-		A8AAE70116DDA8AD00DF346F /* cartoon-lizard-10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "cartoon-lizard-10.gif"; path = "../../../Downloads/cartoon-lizard-10.gif"; sourceTree = "<group>"; };
-		A8AAE70316DDA90E00DF346F /* spock-vulcan-salute-.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "spock-vulcan-salute-.JPG"; path = "../../../Downloads/spock-vulcan-salute-.JPG"; sourceTree = "<group>"; };
-		A8FE12F416E19EC000968B37 /* border.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = border.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,15 +127,15 @@
 			children = (
 				A8AAE6D216DDA52500DF346F /* AppDelegate.h */,
 				A8AAE6D316DDA52500DF346F /* AppDelegate.m */,
-				A8AAE6FD16DDA73E00DF346F /* tan-index-card-hi.png */,
-				A8AAE6FF16DDA7F900DF346F /* scissors-open1.jpg */,
-				A8FE12F416E19EC000968B37 /* border.jpg */,
+				A8AAE6FB16DDA5DF00DF346F /* rock.png */,
+				A895B57616F015D9006348E1 /* paper1.png */,
+				A895B57016F014DE006348E1 /* scissors.png */,
+				A895B56E16F013C3006348E1 /* Gecko.png */,
+				A895B57816F01623006348E1 /* spock1.png */,
+				A895B56C16F01281006348E1 /* sborder.png */,
 				A8AAE6D516DDA52500DF346F /* MainStoryboard_iPhone.storyboard */,
-				A8AAE70316DDA90E00DF346F /* spock-vulcan-salute-.JPG */,
 				A8AAE6D816DDA52500DF346F /* MainStoryboard_iPad.storyboard */,
 				A8AAE6DB16DDA52500DF346F /* ViewController.h */,
-				A8AAE6FB16DDA5DF00DF346F /* rock.png */,
-				A8AAE70116DDA8AD00DF346F /* cartoon-lizard-10.gif */,
 				A8AAE6DC16DDA52500DF346F /* ViewController.m */,
 				A8AAE6CA16DDA52500DF346F /* Supporting Files */,
 			);
@@ -247,11 +247,11 @@
 				A8AAE6D716DDA52500DF346F /* MainStoryboard_iPhone.storyboard in Resources */,
 				A8AAE6DA16DDA52500DF346F /* MainStoryboard_iPad.storyboard in Resources */,
 				A8AAE6FC16DDA5DF00DF346F /* rock.png in Resources */,
-				A8AAE6FE16DDA73E00DF346F /* tan-index-card-hi.png in Resources */,
-				A8AAE70016DDA7F900DF346F /* scissors-open1.jpg in Resources */,
-				A8AAE70216DDA8AD00DF346F /* cartoon-lizard-10.gif in Resources */,
-				A8AAE70416DDA90E00DF346F /* spock-vulcan-salute-.JPG in Resources */,
-				A8FE12F516E19EC000968B37 /* border.jpg in Resources */,
+				A895B56D16F01281006348E1 /* sborder.png in Resources */,
+				A895B56F16F013C3006348E1 /* Gecko.png in Resources */,
+				A895B57116F014DE006348E1 /* scissors.png in Resources */,
+				A895B57716F015D9006348E1 /* paper1.png in Resources */,
+				A895B57916F01623006348E1 /* spock1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

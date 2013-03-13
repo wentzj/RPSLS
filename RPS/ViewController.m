@@ -37,16 +37,16 @@
                 imageName = @"rock.png";
                 break;
             case 1:
-                imageName = @"tan-index-card-hi.png";
+                imageName = @"paper1.png";
                 break;
             case 2:
-                imageName = @"scissors-open1.jpg";
+                imageName = @"scissors.png";
                 break;
             case 3:
-                imageName = @"cartoon-lizard-10.gif";
+                imageName = @"Gecko.png";
                 break;
             case 4:
-                imageName = @"spock-vulcan-salute-.JPG";
+                imageName = @"spock1.png";
                 break;
             
             
