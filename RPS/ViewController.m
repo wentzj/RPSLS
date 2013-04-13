@@ -34,19 +34,19 @@
         NSString* imageName;
         switch (i) {
             case 0:
-                imageName = @"rock.png";
+                imageName = @"rock2.png";
                 break;
             case 1:
-                imageName = @"paper1.png";
+                imageName = @"paper2.jpg";
                 break;
             case 2:
-                imageName = @"scissors.png";
+                imageName = @"scissors2.jpg";
                 break;
             case 3:
-                imageName = @"Gecko.png";
+                imageName = @"gecko2.png";
                 break;
             case 4:
-                imageName = @"spock1.png";
+                imageName = @"spock2.jpg";
                 break;
             
             

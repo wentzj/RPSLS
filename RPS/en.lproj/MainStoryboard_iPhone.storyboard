@@ -1,19 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="PtJ-Pg-RNh">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="PtJ-Pg-RNh">
     <dependencies>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sborder.png" id="B25-C4-kTc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="boarder.jpg" id="B25-C4-kTc">
                                 <rect key="frame" x="26" y="20" width="268" height="270"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -43,12 +42,13 @@
                         <segue destination="oTA-nb-Pnf" kind="push" identifier="moveSelected" id="HYE-3m-jMQ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="918" y="143"/>
         </scene>
+        <!--View Controller-->
         <scene sceneID="bmT-SD-2As">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hVO-rb-Aqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="oTA-nb-Pnf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F8U-xd-8ja">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
@@ -90,15 +90,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="JuV-qH-UdJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gecko2.png" id="JuV-qH-UdJ">
                                 <rect key="frame" x="208" y="266" width="92" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="00o-gK-bjj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="spock2.jpg" id="00o-gK-bjj">
                                 <rect key="frame" x="208" y="143" width="92" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="D13-Bf-bcm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gecko2.png" id="D13-Bf-bcm">
                                 <rect key="frame" x="208" y="20" width="92" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -107,12 +107,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="BuX-8G-prc"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVO-rb-Aqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1351" y="140"/>
         </scene>
+        <!--Navigation Controller-->
         <scene sceneID="NlO-xA-RKU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f4g-ms-AsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="PtJ-Pg-RNh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Cbo-0b-xSM">
@@ -124,12 +125,15 @@
                         <segue destination="2" kind="relationship" relationship="rootViewController" id="KtK-Nv-zpF"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4g-ms-AsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="392" y="143"/>
         </scene>
     </scenes>
     <resources>
-        <image name="sborder.png" width="412" height="507"/>
+        <image name="boarder.jpg" width="320" height="240"/>
+        <image name="gecko2.png" width="64" height="64"/>
+        <image name="spock2.jpg" width="120" height="132"/>
     </resources>
     <classes>
         <class className="ViewController" superclassName="UIViewController">
@@ -147,6 +151,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="KtK-Nv-zpF"/>
+        <segue reference="BEA-vQ-HN8"/>
     </inferredMetricsTieBreakers>
 </document>
